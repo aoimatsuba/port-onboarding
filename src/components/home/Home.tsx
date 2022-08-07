@@ -13,6 +13,9 @@ export const Home = () => {
     return (
         <div className='home'>
             <div className='home__header'>
+                <div className='welcome-text'>
+                    Portへようこそ！
+                </div>
                 <img src={lighthouse} className="background-image" alt="lighthouse-image" />
             </div>
             <div className='home__body'>
