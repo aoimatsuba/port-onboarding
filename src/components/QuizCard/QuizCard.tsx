@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Card,
   CardContent,
@@ -28,6 +28,12 @@ export function QuizCard({
   const [validationError, setValidationError] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState("");
   const [validationText, setValidationText] = useState("");
+
+  useEffect(() => {
+    setValidationError(false);
+    setSelectedAnswer("");
+    setValidationText("");
+  }, [question, options, correctAnswerIndex]);
 
   const handleRadioChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const selectedIndex = event.target.value;
