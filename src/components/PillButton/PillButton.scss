@@ -1,0 +1,13 @@
+.primary {
+  background-color: #ffb74d !important;
+  &:hover {
+    background-color: #ff9800 !important;
+  }
+}
+
+.secondary {
+  background-color: #00b4b4 !important;
+  &:hover {
+    background-color: #049494 !important;
+  }
+}
